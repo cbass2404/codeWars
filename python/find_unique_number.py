@@ -1,6 +1,9 @@
+# def find_uniq(arr):
+#     return sum([n for n in arr if arr.index(n) == len(arr) - 1
+#                 or n != arr[(arr.index(n) - 1)] and n != arr[(arr.index(n) + 1)]])
 def find_uniq(arr):
-    return sum([n for n in arr if arr.index(n) == len(arr) - 1
-                or n != arr[(arr.index(n) - 1)] and n != arr[(arr.index(n) + 1)]])
+    a, b = set(arr)
+    return a if arr.count(a) == 1 else b
 
 
 print(find_uniq([1, 1, 1, 2, 1, 1]))  # 2
