@@ -9,7 +9,7 @@ def is_prime(num):
             if num % n == 0:
                 return False
     else:
-        for n in range(2, int(math.sqrt(num)) + 1):
+        for n in range(2, int(math.sqrt(num)) ):
             if num % n == 0:
                 return False
     return True
